@@ -1,0 +1,74 @@
+name: 🧠 AIOps Weekly Study Task
+description: Use this template to track and reflect on a weekly AIOps learning task.
+title: "[WEEK X] AIOps Study Log: Topic Title"
+labels: ["AIOps", "learning", "internship"]
+assignees:
+  - your-github-username
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📚 Weekly Study Log (AIOps)
+
+        Track progress for your AIOps internship using this issue. Fill out each section to reflect your learning.
+
+  - type: input
+    id: week
+    attributes:
+      label: Week Number
+      description: Which week of the study plan is this?
+      placeholder: "Week 1"
+    validations:
+      required: true
+
+  - type: input
+    id: topic
+    attributes:
+      label: Main Topic
+      description: What is the core topic you're focusing on this week?
+      placeholder: "Anomaly Detection, ELK Stack, etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: activities
+    attributes:
+      label: ✅ Activities Completed
+      description: What did you do this week? (reading, coding, dashboards, projects)
+      placeholder: |
+        - Installed Prometheus + Grafana
+        - Created dashboards for CPU and RAM
+        - Learned about time series metrics
+    validations:
+      required: true
+
+  - type: textarea
+    id: challenges
+    attributes:
+      label: ⚠️ Challenges Faced
+      description: What problems did you face? How did you solve (or plan to solve) them?
+      placeholder: |
+        - Had trouble parsing logs using Logstash
+        - Solved it by using a predefined grok filter
+    validations:
+      required: false
+
+  - type: textarea
+    id: reflection
+    attributes:
+      label: 🧠 Key Takeaways
+      description: What did you learn? Any “aha” moments or realizations?
+      placeholder: |
+        - Learned how alert thresholds can reduce noise
+        - Realized dashboards are only useful with clean data
+    validations:
+      required: true
+
+  - type: textarea
+    id: next
+    attributes:
+      label: 🔜 Plan for Next Week
+      description: What’s your goal for next week?
+      placeholder: "Work on anomaly detection using scikit-learn, integrate with Prometheus alerts"
+    validations:
+      required: false
