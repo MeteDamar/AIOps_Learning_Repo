@@ -1,6 +1,6 @@
 name: 📌 AIOps Task
-description: Create a new issue to track a specific AIOps-related task.
-title: "[Task] <Write a clear, short task title>"
+description: Create a task issue to track progress on a specific AIOps-related activity.
+title: "[Task] <Write your task title here>"
 labels: ["task", "AIOps", "internship"]
 assignees:
   - your-github-username
@@ -9,8 +9,8 @@ body:
     id: objective
     attributes:
       label: 🎯 Objective
-      description: What is the purpose of this task?
-      placeholder: "e.g., Install and configure Prometheus for local metrics monitoring"
+      description: What are you trying to accomplish?
+      placeholder: "e.g., Configure Grafana to visualize CPU usage"
     validations:
       required: true
 
@@ -18,22 +18,23 @@ body:
     id: checklist
     attributes:
       label: ✅ Task Checklist
-      description: Break the task down into steps
+      description: Break the task down into concrete steps. Keep or delete as needed.
       options:
-        - label: Research or review required concepts
-        - label: Set up any necessary tools or environments
-        - label: Write or configure code/scripts
-        - label: Test and validate the solution
-        - label: Document outcome (screenshot, log, notes)
+        - label: Research related concepts or tools
+        - label: Set up environment or install dependencies
+        - label: Implement or configure solution
+        - label: Test and validate results
+        - label: Take screenshots or record output
+        - label: Write documentation or notes
 
   - type: textarea
     id: notes
     attributes:
-      label: 📝 Notes / Progress
-      description: Add any details, logs, problems, or thoughts as you work on the task.
+      label: 📝 Notes & Progress
+      description: Add logs, observations, blockers, or anything worth keeping track of.
       placeholder: |
-        - Installed Prometheus using Docker
-        - Faced an issue binding to port 9090, fixed by stopping another service
-        - Will document steps in wiki
+        - Faced an error while installing Grafana
+        - Will retry with Docker-based setup
+        - Documenting steps in README
     validations:
       required: false
